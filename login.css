@@ -1,0 +1,91 @@
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Fundo cinzento muito claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container 
+{
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px;
+    width: 100%;
+}
+h2 
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Preto suave */
+}
+.form-group 
+{
+    margin-bottom: 20px;
+}
+.form-group label 
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Preto suave */
+}
+.form-group input 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* Borda cinzenta clara */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+.form-group input:focus 
+{
+    border-color: #333; /* Preto suave ao focar */
+    background-color: #f0f0f0; /* Fundo cinza claro ao focar */
+    outline: none;
+}
+.form-group a.button 
+{
+    display: block;
+    width: 94%;
+    padding: 12px;
+    background-color: #000; /* Preto para o botão */
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.form-group a.button:hover 
+{
+    background-color: #444; /* Cinzento escuro ao passar o rato */
+}
+.form-group a 
+{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #000; /* Preto */
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-group a:hover 
+{
+    text-decoration: underline;
+}
+.login-container .footer 
+{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999; /* Cinzento claro */
+}

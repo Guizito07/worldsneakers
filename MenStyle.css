@@ -1,0 +1,138 @@
+body 
+{
+    --heading-font: "Inter", Roboto, sans-serif;
+    --heading-font-weight: 400;
+    --heading-color: var(--bs-dark);
+    --heading-line-height: 1.24;
+  
+    --swiper-theme-color: var(--bs-primary);
+    --swiper-pagination-bottom: 0;
+  
+    --custom-easing: cubic-bezier(.17,.67,.83,.67);
+  
+    /* bootstrap */
+    --bs-body-font-family: "Inter", Roboto, sans-serif;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.7;
+    --bs-body-color: #8f8f8f;
+    --bs-body-color-rgb: 143, 143, 143;
+  
+    --bs-primary: #ce071e;
+    --bs-primary-dark: #8d0414;
+    --bs-secondary: #6c757d;
+    --bs-black: #111;
+    --bs-light: #F1F1F0;
+    --bs-dark: #212529;
+    --bs-gray: #9aa1a7;
+    --bs-gray-dark: #51565b;
+  
+    --bs-primary-rgb: 206, 7, 30;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-black-rgb: 17, 17, 17;
+    --bs-light-rgb: 241, 241, 240;
+    --bs-dark-rgb: 33, 37, 41;
+  
+    --bs-link-color: var(--bs-dark);
+    --bs-link-color-rgb: 17, 17, 17;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: var(--bs-primary);
+    --bs-link-hover-color-rgb: 17, 17, 17;
+}
+
+.bloco
+{
+    display: flex;
+}
+  
+.container-lista
+{
+    margin-left: 0px;
+    width: 15%;
+    height: 900px;
+    border-width: 2px;
+    padding: 5px;
+    border-right: darkgray solid 1px;
+    z-index: 2px;
+    margin-top: -17px;
+}
+
+.main-tenis
+{
+    text-align: center;
+    width: 75%;
+    color: black;
+    float: left;
+}
+
+.container-lista {
+  margin-left: 0;
+  width: 15%;
+  height: 900px;
+  border-width: 2px;
+  padding: 5px;
+  border-right: darkgray solid 1px;
+  position: relative; /* Adiciona contexto para o z-index */
+}
+
+.menu-marcas {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove a margem padrão */
+}
+
+.menu-marcas > li {
+  position: relative; /* Necessário para o posicionamento do submenu */
+}
+
+.menu-marcas > li > a {
+  display: block;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espaçamento entre os itens do menu */
+}
+
+.menu-marcas > li:hover > a {
+  background-color: black; /* Cor de hover */
+  color: white;
+}
+
+.submenu {
+  list-style: none;
+  position: absolute; /* Permite o submenu ser posicionado em relação ao item pai */
+  top: 100%;
+  left: 0;
+  display: none; /* Submenu escondido por padrão */
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  width: 150px; /* Largura do submenu */
+  z-index: 10; /* Garante que o submenu fique acima de outros elementos */
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.submenu li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.menu-marcas > li:hover .submenu {
+  display: block; /* Mostrar o submenu ao passar o mouse */
+}

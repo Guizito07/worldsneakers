@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>world Sneakers - Login</title>
+
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <script src="Login.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="content">
+            <center><img src="images/main-logo.png"></center>
+        </div>
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Write down your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Write down your password">
+            </div>
+            <div class="form-group">
+                    <!-- Link que funciona como botão com validação ao clicar -->
+                    <a href="index.html" class="button" onclick="validarFormulario(event)">Login</a>
+            </div>
+            <div class="form-group">
+                <a href="#">Forgot your password?</a>
+            </div>
+            <div class="form-group">
+                    <a href="Register.html">Don't have an account? Register now</a>
+            </div>
+        </form>
+        <div class="footer">
+            <p>&copy; 2024 World Sneakers. Your data is safe with us.</p>
+        </div>
+    </div>
+
+</body>
+</html>

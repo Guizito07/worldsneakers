@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Sneakers - Register</title>
+
+    <link rel="stylesheet" type="text/css" href="Register.css">
+    
+    <script src="Register.js"></script>
+</head>
+<body>
+
+    <div class="register-container">
+        <div class="content">
+            <center><img src="images/main-logo.png"></center>
+        </div>
+        <h2>Register account</h2>
+        <form onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Write down your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Write down your E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Write down your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm your password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-group">
+                <!-- Botão de registro que redireciona após validação -->
+                <a href="index.html" class="button" onclick="validateForm(event)">Register</a>
+            </div>
+            <div class="form-group">
+                <a href="login.html">Already have an account? Login</a>
+            </div>
+        </form>
+        <div class="footer">
+            <p>&copy; 2024 World Sneakers. Your data is safe with us.</p>
+        </div>
+    </div>
+
+</body>
+</html>

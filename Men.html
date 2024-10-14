@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>World Sneakers - Men</title>
+
+  <link rel="stylesheet" type="text/css" href="MenStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,900;1,900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="Men.js"></script>
+</head>
+
+<body>
+  <header id="header" class="site-header text-black">
+    <nav id="header-nav" class="navbar navbar-expand-lg">
+      <div class="container-lg">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/main-logo.png" class="logo" alt="logo">
+        </a>
+        <button class="navbar-toggler d-flex d-lg-none order-3 border-0 p-1 ms-2" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <svg class="navbar-icon">
+            <use xlink:href="#navbar-icon"></use>
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar">
+          <div class="offcanvas-header px-4 pb-0">
+            <a class="navbar-brand ps-3" href="index.html">
+              <img src="images/main-logo.png" class="logo" alt="logo">
+            </a>
+            <button type="button" class="btn-close btn-close-black p-5" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="navbar" class="navbar-nav fw-bold justify-content-end align-items-center flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link me-5" href="Men.html">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="Women.html">Women</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link me-5 active dropdown-toggle border-0" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Page</a>
+                <ul class="dropdown-menu fw-bold">
+                  <li>
+                    <a href="AboutUs.html" class="dropdown-item">About Us</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link me-5 active dropdown-toggle border-0" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Account</a>
+                <ul class="dropdown-menu fw-bold">
+                  <li>
+                    <a href="Login.html" class="dropdown-item">Login</a>
+                  </li>
+                  <li>
+                    <a href="Register.html" class="dropdown-item">Register</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr style="border: 1px solid; border-color:darkgray; margin-top: -7px;">
+  </header>
+
+  <div class="bloco">
+    <div class="container-lista">
+      <ul class="menu-marcas">
+        <li>
+          <a href="#">Nike</a>
+          <ul class="submenu">
+            <li><a href="#" onclick="loadcontent('Nike-dunk')">Nike Dunk</a></li>
+            <li><a href="#" onclick="loadcontent('Nike-air-force')">Nike Air Force 1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Jordan</a>
+          <ul class="submenu">
+            <li><a href="#" onclick="loadcontent('Jordan-1')">Jordan 1</a></li>
+            <li><a href="#" onclick="loadcontent('Jordan-4')">Jordan 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Adidas</a>
+          <ul class="submenu">
+            <li><a href="#" onclick="loadcontent('Adidas-campus')">Adidas Campus</a></li>
+            <li><a href="#" onclick="loadcontent('Adidas-samba')">Adidas Samba</a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+
+  <div class="main-tenis" id="Principal">
+    <p>Carregando produtos em destaque...</p>
+  </div>
+  </div>>
+
+  <footer id="footer" class="py-5 border-top">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-2 pb-3">
+          <div class="footer-menu">
+            <h5 class="widget-title pb-2">Information</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="pb-2">
+                <a href="AboutUs.html">About Us</a>
+              </li>
+              <li class="pb-2">
+                <a href="Login.html">Login</a>
+              </li>
+              <li class="pb-2">
+                <a href="Register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 pb-3">
+          <div class="footer-menu">
+            <h5 class="widget-title pb-2">Men</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="pb-2">
+                <a href="Men.html">Men Shoes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 pb-3">
+          <div class="footer-menu">
+            <h5 class="widget-title pb-2">Women</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="pb-2">
+                <a href="Women.html">Women Shoes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 pb-3">
+          <div class="footer-menu">
+            <h5 class="widget-title pb-3">Contact Us</h5>
+            <div class="footer-contact-text">
+              <a href="index.html">World Sneakers - co.</a>
+              <a href="index.html"> Call us: (+351) 123 456 789 </a>
+              <a href="index.html" class="text-hover fw-bold light-border">geral@worldsneakers.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
